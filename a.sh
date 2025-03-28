@@ -31,12 +31,8 @@ EEOF
 # Create auto script
 cat > /home/cloudsigma/auto.sh << 'EEOF'
 #!/bin/bash
-ip link set ens4 up
-ip link set ens5 up
-ip link set ens6 up
-dhclient ens4
-dhclient ens5
-dhclient ens6
+ip link set ens3
+dhclient ens3
 systemctl restart danted
 EEOF
 
